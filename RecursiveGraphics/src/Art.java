@@ -1,12 +1,13 @@
 /**
  * <pre>
- * Name:
+ * Name: Isayiah Lim
  * Mrs. Kankelborg
  * Period
  * Project 2 Recursive Art Project Part 3: Art
- * Revision History:
+ * Revision History: 10/14 (Inital Commit)
  *
- * Class Description:
+ * Class Description: This will draw a castle with increasing complexity and more towers using 
+ * recursion and standard draw. 
  * </pre>
  */
 
