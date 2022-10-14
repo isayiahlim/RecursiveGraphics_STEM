@@ -110,14 +110,17 @@ public class Transform2D
 	//rotates theta degrees around the origin
 	public static void rotate(double[] x, double[] y, double theta)
 	{
+		//rotation formula
 		theta = Math.toRadians(theta);
 		double sin = Math.sin(theta);
 		double cos = Math.cos(theta);
 		//rotates the given degrees using trig
 		for(int i = 0; i < x.length; i++)
 		{
+			//stores x and y points
 			double tempX = x[i];
 			double tempY = y[i];
+			//recalculates
 			x[i] = (tempX * cos) - (tempY * sin);
 			y[i] = (tempY * cos) + (tempX * sin);
 		}
