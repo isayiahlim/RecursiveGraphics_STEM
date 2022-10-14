@@ -111,14 +111,15 @@ public class Transform2D
 	public static void rotate(double[] x, double[] y, double theta)
 	{
 		theta = Math.toRadians(theta);
+		double sin = Math.sin(theta);
+		double cos = Math.cos(theta);
 		//rotates the given degrees using trig
 		for(int i = 0; i < x.length; i++)
 		{
-			x[i] = (x[i] * Math.cos(theta)) - (y[i] * Math.sin(theta));
-		}
-		for(int i = 0; i < y.length; i++)
-		{
-			y[i] = (y[i] * Math.cos(theta)) + (x[i] * Math.sin(theta));
+			double tempX = x[i];
+			double tempY = y[i];
+			x[i] = (tempX * cos) - (tempY * sin);
+			y[i] = (tempY * cos) + (tempX * sin);
 		}
 	}
 }
