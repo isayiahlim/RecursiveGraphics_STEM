@@ -136,7 +136,7 @@ public class Art
 	{
 		double width = 0.15*height;
 		//tower outline
-		StdDraw.setPenColor(r-15,g-15,b-15);
+		StdDraw.setPenColor(r-20,g-20,b-20);
 		StdDraw.filledRectangle(x, y, 0.16*height, 1.01*height);
 		//top squares
 		StdDraw.filledRectangle(x-(0.1*height), y+1.04*height, 0.06*height, 0.06*height);
@@ -151,16 +151,25 @@ public class Art
 		StdDraw.setPenColor(r-25,g-25,b-25);
 		StdDraw.filledCircle(x, y+height*0.67, 0.07*height);
 		StdDraw.filledSquare(x, y+height*0.6, 0.07*height);
+		StdDraw.setPenColor(r-20,g-20,b-20);
+		StdDraw.filledCircle(x, y+height*0.67, 0.06*height);
+		StdDraw.filledSquare(x, y+height*0.6, 0.06*height);
 	}
 	//draws a banner
 	private static void drawBanner()
 	{
-		StdDraw.setPenColor(170,56,30);
+		StdDraw.setPenColor(230,210,100);
 		StdDraw.filledRectangle(0.5,0.62,0.15,0.07);
-		StdDraw.setPenColor(160,46,20);
+		StdDraw.setPenColor(240,230,100);
 		StdDraw.filledRectangle(0.5,0.62,0.14,0.06);
-		StdDraw.setPenColor(255,215,0);
+		StdDraw.setPenColor(255,200,0);
 		StdDraw.filledCircle(0.5, 0.62, 0.05);
+		StdDraw.setPenColor(255,215,0);
+		StdDraw.filledCircle(0.5, 0.62, 0.04);
+		StdDraw.setPenColor(255,230,0);
+		StdDraw.filledCircle(0.5, 0.62, 0.03);
+		StdDraw.setPenColor(255,245,0);
+		StdDraw.filledCircle(0.5, 0.62, 0.02);
 		StdDraw.setPenRadius(0.01);
 		StdDraw.setPenColor(214,118,63);
 		StdDraw.line(0.4, 0.66, 0.4, 0.69);
